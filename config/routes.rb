@@ -3,8 +3,8 @@ Rails.application.routes.draw do
 
   resources :users
 
-  resources :budget_categories do
-    resources :expenses
+  resources :budget_categories, only: [:index, :show, :new, :create] do
+    resources :expenses, only: [:index, :show, :new]
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
