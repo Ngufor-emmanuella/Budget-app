@@ -41,7 +41,7 @@ form input[type="email"],
 input[type="password"],
 input[type="text"] {
   width: 100%;
-  padding: 1em;
+  padding: 1.2em;
   border: none;
   border-bottom: 1px solid #bbb;
 }
